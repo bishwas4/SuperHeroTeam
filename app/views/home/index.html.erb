@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= link_to 'Click Here to Generate A New Superhero',root_path %></h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class= "col-md-4">
+        <img src="<%=@avatar%>" alt="">
+      </div>
+      <div class= "col-md-4">
+        <h3>Superhero Name:<%= @hero_name%><br/></h3>
+        <h3>Superhero power: <%=@hero_power%></h3><br/><br/>
+        <h3 style= "color:red;">Your Undercover Day job is : </h3>
+        <h4><%=@corp_title%><br/><h4>
+        <h3 style= "color:red;">Your Undercover power is :</h3>
+        <h4 style = "color:blue;"><%=@corp_poer.capitalize%></h4>
+      </div>
+    </div>
+
+
+
+    </div>
+  </div>
+  <div class="panel-footer"> <%=link_to 'Create A whole superhero Team',home_team_path %></div>
+</div>

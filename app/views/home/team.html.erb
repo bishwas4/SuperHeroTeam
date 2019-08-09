@@ -1,0 +1,13 @@
+</br><div class="panel panel-default">
+
+  <div class="panel-heading">
+    <h3 class="panel-title gray">How many team member you want? </h3>
+  </div>
+  <% if @team_number.to_i > 0 %>
+    <%= render 'home/show_team'%>
+  <% else %>
+    <%= render 'home/create_team'%>
+  <%end%>
+
+  <div class="panel-footer"> <%=link_to 'Create A whole superhero Team',home_team_path %></div>
+</div>

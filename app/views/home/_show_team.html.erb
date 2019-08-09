@@ -1,0 +1,16 @@
+<% @team_number.times do %>
+  <div class="row">
+    <div class= "col-md-4">
+      <img src="<%=@avatar%>" alt="">
+    </div>
+    <div class= "col-md-4">
+      <h3>Superhero Name:</h3><h4 style= "color: red;"><%= Faker::Superhero.name %></h4>
+      <h3>Superhero power:</h3><h4 style ="color: blue;"> <%= Faker::Superhero.power %></h4><br/>
+      <h3 style= "color:red;">Your Undercover Day job is : </h3>
+      <h4><%=Faker::Company.name%><br/><h4>
+      <h3 style= "color:red;">Your Undercover power is :</h3>
+      <h4 style = "color:blue;"><%=Faker::Company.bs.capitalize%></h4>
+    </div>
+  </div>
+  ---------------------------------------------------------------------------------------------------------------------------------------------
+<%end%>
